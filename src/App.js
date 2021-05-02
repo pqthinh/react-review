@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
 import { Header } from "./component/header";
 import {Body} from './component/body'
+import { PageListProduct } from "./page/listProduct";
 
 const App = () => {
   const [search, setSearch] = useState("")
@@ -13,7 +14,8 @@ const App = () => {
   return (
     <>
       <Header setSearch={setSearch}/>
-      <Body search={search}/>
+      {/* <Body search={search}/> */}
+      <PageListProduct />
     </>
   );
 };
