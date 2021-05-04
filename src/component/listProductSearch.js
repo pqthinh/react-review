@@ -43,11 +43,11 @@ export const ListProduct = (props) => {
 
   return (
     <>
-      <ul id="productsList">
+      <div className="productsList">
         { products.map(product => { 
           return <Product product={product} />
         })}
-      </ul>
+      </div>
     </>
   );
 };

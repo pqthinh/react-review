@@ -4,11 +4,11 @@ export const Product = (props) => {
   const { product } = props;
   return (
     <>
-      <li className="product">
-        <h2>{product.name}</h2>
-        <p>Brand: {product.brand}</p>
-        <img src="${product.imageUrl}" />
-      </li>
+      <div className="product">
+        <h2 className="product__name">{product.name}</h2>
+        <p className="product__branch">Brand: {product.brand}</p>
+        <img src={`${product.imageUrl}`} />
+      </div>
     </>
   );
 };
